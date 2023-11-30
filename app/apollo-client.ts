@@ -6,7 +6,7 @@ const createApolloClient = () => {
     uri: "https://moved-anemone-67.hasura.app/v1/graphql",
     cache: new InMemoryCache(),
     headers: {
-      "x-hasura-admin-secret": process.env.hasura_admin_secret ?? '',
+      "x-hasura-admin-secret": process.env.hasura_key ?? '',
     },
   });
 

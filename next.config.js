@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
-    hasura: process.env.hasura_admin_secret,
+    hasura_key: process.env.hasura_admin_secret,
   },
 };
 
